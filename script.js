@@ -6,3 +6,8 @@ const scissors = 2; // Set the variable of scissors to 2
 function getComputerChoiceO(cmputerChoice){
     return (Math.floor(Math.random() * 3)) // Expected outputL 0, 1 or 2
 }
+
+//This is a function to get the input of user and the user must choose between rock, paper and scissor.
+function getHumanChoice(){
+    return prompt('Choose between rock, paper and scissor', 'rock')
+}
