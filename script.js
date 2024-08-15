@@ -39,6 +39,20 @@ if(humanChoice == 'rock' && computerChoice == 2){
 
 }
 
+//This function will determine the winner of the game of 5 rounds of play
+function playGame(){
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
 
+    for( let i = 0; i < 5; i++){
+        playRound(humanSelection, computerSelection);
+        if(humanScore == 5){
+            console.log('You Win the 5 game series!');
+        }else{
+            console.log('You lose the 5 game series!')
+        }
+        i++
+    }
+}
 
 
