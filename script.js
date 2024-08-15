@@ -16,8 +16,7 @@ function getHumanChoice(){
 
 //This function wil determmince will take the human and computer choices and determine which of the two won the round.
 function playRound(humanChoice, computerChoice){
-    getComputerChoice();
-    getHumanChoice();
+   
 if(humanChoice == 'rock' && computerChoice == 2){
     console.log('You win! Rock beats Scissor');
     ++humanScore;
