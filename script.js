@@ -48,11 +48,18 @@ function playGame(){
         playRound(humanSelection, computerSelection);
         if(humanScore == 5){
             console.log('You Win the 5 game series!');
+            humanScore = 0;
+            computerScore = 0;
+            playRound(humanSelection, computerSelection);
         }else{
             console.log('You lose the 5 game series!')
+            humanScore = 0;
+            computerScore = 0;
+            playRound(humanSelection, computerSelection);
         }
         i++
     }
 }
+playGame(); // This will call the play game function./
 
 
