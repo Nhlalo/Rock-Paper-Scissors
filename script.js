@@ -11,7 +11,7 @@ function getComputerChoice(){
 
 //This is a function to get the input of user and the user must choose between rock, paper and scissor.
 function getHumanChoice(){
-    return prompt('Choose between rock, paper and scissor', 'rock')
+    return prompt('Choose between rock, paper and scissor', 'rock').toLowerCase()
 }
 
 //This function wil determmince will take the human and computer choices and determine which of the two won the round.
