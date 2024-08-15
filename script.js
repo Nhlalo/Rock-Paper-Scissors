@@ -1,5 +1,5 @@
-const humanScore = 0; // Set the humanScore variable to 0;
-const computerScore = 0; // Set the computerScore variable to 0;
+let humanScore = 0; // Set the humanScore variable to 0;
+let computerScore = 0; // Set the computerScore variable to 0;
 
 //This is a function to make the computer randomly choose between 0,1 and 2.
 function getComputerChoice(){
@@ -39,8 +39,8 @@ if(humanChoice == 'rock' && computerChoice == 2){
 
 //This function will determine the winner of the game of 5 rounds of play
 function playGame(){
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+    const humanSelection = getHumanChoice(); // make the variable equal to the getHumanChoice function
+    const computerSelection = getComputerChoice(); // make the variable equal to the getComputerChoice function
     
     //This will make sure there are five rounds to play in order to determine the overall winner and if the winner has been decided, the game will reset
     for( let i = 0; i < 5; i++){
