@@ -1,6 +1,3 @@
-const rock = 0; // Set the variable of rock to 0
-const paper = 1; // Set the variable of paper to 1
-const scissors = 2; // Set the variable of scissors to 2
 const humanScore = 0; // Set the humanScore variable to 0;
 const computerScore = 0; // Set the computerScore variable to 0;
 
