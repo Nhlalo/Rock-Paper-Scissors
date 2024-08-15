@@ -17,19 +17,26 @@ function getHumanChoice(){
 //This function wil determmince will take the human and computer choices and determine which of the two won the round.
 function playRound(humanChoice, computerChoice){
 if(humanChoice == 'rock' && computerChoice == 2){
-    console.log('You win! Rock beats Scissor')
+    console.log('You win! Rock beats Scissor');
+    ++humanScore;
 }else if(humanChoice == 'paper' && computerChoice == 0){
-    console.log('You win! Paper beats Rock')
+    console.log('You win! Paper beats Rock');
+    ++humanScore;
 }else if(humanChoice == 'scissor' && computerChoice == 1){
-    console.log('You win! Scissor beats Paper')
+    console.log('You win! Scissor beats Paper');
+    ++humanScore;
 }else if(humanChoice == 'rock' && computerChoice == 1){
-    console.log('You lose! Paper beats Rock')
+    console.log('You lose! Paper beats Rock');
+    ++computerScore;
 }else if(humanChoice == 'paper' && computerChoice == 2){
-    console.log('You lose! Scissor beats Paper ')
+    console.log('You lose! Scissor beats Paper ');
+    ++computerScore;
 }else if(humanChoice == 'scissor' && computerChoice == 0){
-    console.log( 'You lose! Rock beats Scissor')
+    console.log( 'You lose! Rock beats Scissor');
+    ++computerScore;
 }
 
 }
+
 
 
