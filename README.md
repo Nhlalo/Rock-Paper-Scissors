@@ -1,1 +1,1 @@
-# Tic-Tac-Toe
+# This project is about creating the game Rock Paper Scissors. This game will be played entirely in the console.
