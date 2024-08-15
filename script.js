@@ -16,8 +16,9 @@ function getHumanChoice(){
 
 //This function wil determmince will take the human and computer choices and determine which of the two won the round.
 function playRound(humanChoice, computerChoice){
-   
-if(humanChoice == 'rock' && computerChoice == 2){
+
+// The choices made by the user and computer will the determine the winner and loser of each round
+if(humanChoice == 'rock' && computerChoice == 2){ 
     console.log('You win! Rock beats Scissor');
     ++humanScore;
 }else if(humanChoice == 'paper' && computerChoice == 0){
@@ -43,15 +44,17 @@ if(humanChoice == 'rock' && computerChoice == 2){
 function playGame(){
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
-
+    
+    //This will make sure there are five rounds to play in order to determine the overall winner and if the winner has been decided, the game will reset
     for( let i = 0; i < 5; i++){
         playRound(humanSelection, computerSelection);
+        //If the user reaches the score of 5 first, the code within will be executed
         if(humanScore == 5){
             console.log('You Win the 5 game series!');
-            humanScore = 0;
-            computerScore = 0;
+            humanScore = 0; // Set the human score to 0;
+            computerScore = 0; // Set the human score to 0;
             playRound(humanSelection, computerSelection);
-        }else{
+        }else{ //If the user reaches the score of 5 first, the code within will be executed
             console.log('You lose the 5 game series!')
             humanScore = 0;
             computerScore = 0;
