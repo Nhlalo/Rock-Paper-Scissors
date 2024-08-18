@@ -43,7 +43,7 @@ if(humanChoice == 'rock' && computerChoice == 2){
 function playGame(){
     
     //This will make sure there are five rounds to play in order to determine the overall winner and if the winner has been decided, the game will reset
-    for( let i = 0; i < 5; i++){
+    for( let i = 0; i < Infinity; i++){
         const humanSelection = getHumanChoice(); // make the variable equal to the getHumanChoice function
         const computerSelection = getComputerChoice(); // make the variable equal to the getComputerChoice function
     
@@ -53,12 +53,12 @@ function playGame(){
             console.log('You Win the 5 game series!');
             humanScore = 0; // Set the human score to 0;
             computerScore = 0; // Set the human score to 0;
-            playRound(humanSelection, computerSelection);
+            break;
         }else if(computerScore == 5){ //If the user reaches the score of 5 first, the code within will be executed
             console.log('You lose the 5 game series!')
             humanScore = 0;
             computerScore = 0;
-            playRound(humanSelection, computerSelection);
+            break;
         }
         
     }
