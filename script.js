@@ -53,12 +53,12 @@ function playGame(){
             console.log('You Win the 5 game series!');
             humanScore = 0; // Set the human score to 0;
             computerScore = 0; // Set the human score to 0;
-            break;
+            
         }else if(computerScore == 5){ //If the user reaches the score of 5 first, the code within will be executed
             console.log('You lose the 5 game series!')
             humanScore = 0;
             computerScore = 0;
-            break;
+            
         }
         
     }
